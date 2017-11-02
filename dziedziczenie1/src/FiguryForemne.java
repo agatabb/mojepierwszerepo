@@ -19,3 +19,29 @@ public abstract class FiguryForemne {
                 "}";
     }
 }
+class Okrag extends FiguryForemne{
+
+    public Okrag(double a) {
+        super(a);
+    }
+
+    @Override
+    public double pole() {
+        return pi*a*a;
+    }
+
+    @Override
+    public double obwod() {
+        // a oznacza promien okregu
+        return 2*pi*a;
+    }
+
+    @Override
+    public String toString() {
+        return "Okrag{" +
+                " r : " + a +
+                " pole: "+ pole() +
+                " obwod: " +obwod()+
+                "}";
+    }
+}
