@@ -45,3 +45,27 @@ class Okrag extends FiguryForemne{
                 "}";
     }
 }
+class TrojkatRownoboczny extends FiguryForemne {
+
+    public TrojkatRownoboczny(double a) {
+        super(a);
+    }
+
+    @Override
+    public double pole() {
+        return a*a*Math.sqrt(3)/4;
+    }
+
+    @Override
+    public double obwod() {
+        return 3*a;
+    }
+    @Override
+    public String toString() {
+        return "Trójkąt równoboczny {" +
+                " a : " + a +
+                " pole: "+ pole() +
+                " obwod: " +obwod()+
+                "}";
+    }
+}
