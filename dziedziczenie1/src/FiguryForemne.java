@@ -69,3 +69,35 @@ class TrojkatRownoboczny extends FiguryForemne {
                 "}";
     }
 }
+class Prostopadloscian extends TrojkatRownoboczny{
+    double h;
+
+    public Prostopadloscian(double a, double h) {
+        super(a);
+        this.h = h;
+    }
+
+    @Override
+    public double pole() {
+        return super.pole()*h;
+    }
+
+    public double objetosc() {
+        return 2*super.pole()+super.obwod()*h;
+    }
+
+    @Override
+    public double obwod() {
+        return 0;
+    }
+    @Override
+    public String toString() {
+        return "Prostopadloscian {" +
+                " a : " + a +
+                " h: " + h +
+                " pole: "+ pole() +
+                " obwod: " +obwod()+
+                " objetosc: "+objetosc()+
+                "}";
+    }
+}
