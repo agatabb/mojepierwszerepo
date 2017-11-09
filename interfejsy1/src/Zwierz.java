@@ -18,3 +18,46 @@ public abstract class Zwierz {
     public abstract String podajGatunek ();
     public abstract void info ();
 }
+class Ryba extends Zwierz implements Plywa {
+    float glebokosc;
+
+    public Ryba(String nazwa, float glebokosc) {
+        super(nazwa);
+        this.glebokosc = glebokosc;
+    }
+
+    @Override
+    public float podajGlebokosc() {
+        return glebokosc;
+    }
+
+    @Override
+    public String podajGatunek() {
+        return "Ryba";
+    }
+
+    @Override
+    public void info() {
+        System.out.println(podajNazwe() + " plywa na glebokosci: "+podajGlebokosc());
+    }
+}
+class Kot extends Zwierz implements WydajeGlos {
+    public Kot(String nazwa) {
+        super(nazwa);
+    }
+
+    @Override
+    public String podajGlos() {
+        return "Miauuu";
+    }
+
+    @Override
+    public String podajGatunek() {
+        return "Kot";
+    }
+
+    @Override
+    public void info() {
+        System.out.println(podajNazwe() + " mówi "+podajGlos());
+    }
+}
