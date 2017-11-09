@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="115a6530-9f5a-44ba-be34-53424cd75eb8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Zwierz.java" afterPath="$PROJECT_DIR$/src/Zwierz.java" />
-    </list>
+    <list default="true" id="115a6530-9f5a-44ba-be34-53424cd75eb8" name="Default" comment="" />
     <ignored path="interfejsy1.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
