@@ -25,3 +25,22 @@ public class Punkt extends javafx.geometry.Point2D {
 
     }
 }
+class Distance{
+    double  dist;
+    Punkt p1,p2;
+
+    public Distance(Punkt p1, Punkt p2) {
+        this.p1 = p1;
+        this.p2 = p2;
+        dist = Punkt.odl(p1,p2);
+    }
+
+    @Override
+    public String toString() {
+        return "Distance{" +
+                "dist=" + dist +
+                ", p1=" + p1 +
+                ", p2=" + p2 +
+                '}';
+    }
+}
